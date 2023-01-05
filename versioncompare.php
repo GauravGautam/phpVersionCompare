@@ -2,6 +2,10 @@
 
 $check = compareVersion('abc','3.0.2');
 print_r($check);
+//-1 = "my version small than request version"
+//0 = "my version is same as request version"
+//1 = "my version greater than request version"
+//2 = "cannot compare" 
 
 
 function compareVersion($myVersion, $requestVersion) {
